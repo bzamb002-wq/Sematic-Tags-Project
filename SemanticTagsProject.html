@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semantic Tags Project</title>
+        <style>
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                color: white;
+                background-color: black;
+            }
+
+            h1, h2, #headingP, #navP {
+                text-align: center;
+                color: black;
+            }
+
+            header {
+                background-color: rgb(218, 218, 218);
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            nav {
+                background-color: rgb(99, 97, 97);
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .navA {
+                display: block;
+                margin-bottom: 10px;
+                color: white;
+                text-decoration: none;
+            }
+
+            .navA:hover {
+                text-decoration: underline;
+            }
+
+            .navA:visited {
+                color: lightgray;
+            }
+            
+            .navA2 {
+                color: white;
+                text-decoration: none;
+            }
+
+            .navA2:hover {
+                text-decoration: underline;
+            }
+
+            .navA2:visited {
+                color: lightgray;
+            }
+
+            main {
+                background-color: rgb(43, 43, 43);
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            section {
+                text-align: center;
+                color: white;
+                background-color: rgb(0, 0, 0);
+                border-color: rgb(255,255,255);
+                border-style: outset;
+                border-width: 5px;
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .sectionh2 {
+                text-align: center;
+                color: white;
+            }
+
+            .sideinfo {
+                font-size: 0.9em;
+                color: lightgray;
+            }
+
+            #article1 {
+                background-color: rgb(80, 0, 0);
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            #article2 {
+                background-color: rgb(150, 0, 0);
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .asidecontainer {
+                display: flex;
+                gap: 24px;
+                align-items: flex-start;
+            }
+
+            .image {
+                flex: 1;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .sidebar {
+                flex: 1;
+                background-color: rgb(255, 0, 0);
+                padding: 20px;
+            }
+
+            .details {
+                background-color: rgba(255, 128, 0, 0.788);
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .copyright {
+                text-align: center;
+                font-size: 75%;
+                margin-top: 20px;
+                padding: 10px;
+                background-color: rgb(128, 255, 0);
+            }
+
+            footer {
+                background-color: rgb(255, 255, 0);
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .footer-text {
+                text-align: center;
+                color: white;
+            }
+
+            .footerA {
+                color: white;
+                text-decoration: none;
+            }
+
+            .footerA:hover {
+                text-decoration: underline;
+            }
+
+            .footerA:visited {
+                color: lightgray;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header id="top">
+            <h1>Semantic Tags Project</h1>
+            <h2>Header</h2>
+            <p id="headingP">This is a Header, it is where the main heading of the page is placed.</p>
+        </header>
+        <nav>
+            <h2>Navigation</h2>
+            <a href="RegistrationFormProject.html" class="navA">This link leads to one of my projects</a>
+            <a href="RegistrationFormProject.html" class="navA">This link leads to one of my projects</a>
+            <p id="navP">This is a Navigation, it is where the main navigation of the page is placed.</p>
+        </nav>
+        <main>
+            <h2>Main Content</h2>
+            <p>This is the main content area of the page.</p>
+            <p>Example, if you are in a page about something, like <a href="https://somersetcollegeprep.org" class="navA2">Somerset College Prep</a>, the main tag would conatain stuff about what is the school, what it does, basically the main content.</p>
+            <p class="sideinfo">Remember, there is only one main tag per page.</p>
+        </main>
+        <section>
+            <h2 class="sectionh2">Section</h2>
+            <p>This is a Section, it is where a distinct part of the page is placed.</p>
+            <p>The section tag usually contains a heading and related content.</p>
+            <p>Example: A section about the history of the school.</p>
+            <p class="sideinfo">Remember, Section tags is way different from div, or article tags.</p>
+        </section>
+        <article id="article1">
+            <h2>Article</h2>
+            <p>This is an Article, it is where a self-contained composition is placed.</p>
+            <p>The article tag usually contains a heading and related content.</p>
+            <p>Example: A newspaper article covering how St. Lucie County schools could recieve better lunch programs.</p>
+            <p class="sideinfo">Remember, Article tags is way different from div, or section tags.</p>
+        </article>
+        <article id="article2">
+            <h2>Article Example</h2>
+            <h2><em>Too Close</em></h2>
+            <p class="sideinfo">November 7, 2000*</p>
+            <p class="sideinfo">By the Florida times*</p>
+            <p>On November, 2000, the election is coming to an end. All states got there electoral votes and there almost similar, exept one state- Florida.</p>
+            <p>the presidency came down to Florida's 25 electoral votes.  Because the initial margin of victory between Bush and Gore was less than 0.5%, Florida law triggered an automatic machine recount.</p>
+            <p>We have no idea what will happen next.</p>
+            <p class="sideinfo">*Dates and news producer is fictional, please do not copy.</p>
+        </article>
+        <div class="asidecontainer">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjre-BSsxXkfczZnlvFuUVXNWtszbWSvQZquVXrjC3jg&s=10" alt="a photo of a news article about the 2000 Presidental election" class="image">
+                <figcaption>A news article about the 2000 Presidential election. This is also the Figure/Figcaption tag, the Caption of the figure.</figcaption>
+            </figure>
+          <aside class="sidebar">
+            <h2>Aside</h2>
+            <p>This is an Aside, it is where content that is related to the main content but not essential to its understanding is placed.</p>
+            <p>The aside tag usually contains a heading and related content.</p>
+            <p>Example: A sidebar with links to related articles or resources.</p>
+        </aside>
+        </div>
+        <div class="details">
+            <h2>Details Tag</h2>
+            <details>
+               <summary>Details tag</summary>
+               <p>This is a Details tag, it is where additional information can be shown or hidden.</p>
+            </details>
+            <details>
+               <summary>Example: System Requirements</summary>
+               <p>Here are the system requirements for the application:</p>
+               <ul>
+                  <li>Operating System: Windows 10 or later</li>
+                  <li>Processor: Intel Core i5 or AMD Ryzen 5</li>
+                  <li>Memory: 8 GB RAM</li>
+                  <li>Storage: 256 GB SSD</li>
+               </ul>
+            </details>
+        </div>
+        <footer>
+            <h2 class="footer-text">Footer</h2>
+            <p class="footer-text">This is a Footer, it is where the footer of the page is placed.</p>
+            <p class="footer-text">The footer tag usually contains information about the author, copyright information, and related content.</p>
+            <p class="footer-text">Example: A footer with contact information and links to social media profiles.</p>
+            <p class="footer-text">In conclusion (this is also another example), that is all for now.</p>
+            <a href="#top" class="footerA">Back to Top</a>
+        </footer>
+        <div class="copyright">
+            <p>copyright &copy; Mr. Jean's project. All rights reserved.</p>
+        </div>
+    </body>
+</html>
